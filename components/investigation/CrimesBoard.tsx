@@ -103,7 +103,7 @@ const TAG_COLORS = [
 const ModusOperandiCard = ({
   pinRef,
 }: {
-  pinRef: React.RefObject<HTMLDivElement>;
+  pinRef?: React.RefObject<HTMLDivElement | null>;
 }) => {
   const [open, setOpen] = useState(false);
   return (
@@ -233,7 +233,7 @@ const ModusOperandiCard = ({
 const OngoingInvestigationCard = ({
   pinRef,
 }: {
-  pinRef: React.RefObject<HTMLDivElement>;
+  pinRef?: React.RefObject<HTMLDivElement | null>;
 }) => (
   <motion.div
     className="relative z-20 cursor-default group h-full md:col-span-1 lg:col-span-1"
