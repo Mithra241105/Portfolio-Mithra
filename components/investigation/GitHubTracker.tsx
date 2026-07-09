@@ -10,7 +10,7 @@ interface GitHubData {
   name: string;
 }
 
-export const GitHubTracker = ({ pinRef }: { pinRef: React.RefObject<HTMLDivElement> }) => {
+export const GitHubTracker = ({ pinRef }: { pinRef: React.RefObject<HTMLDivElement | null> }) => {
   const [data, setData] = useState<GitHubData | null>(null);
   const [loading, setLoading] = useState(true);
 

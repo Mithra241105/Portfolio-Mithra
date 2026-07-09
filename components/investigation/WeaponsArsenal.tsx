@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export const WeaponsArsenal = ({ pinRef }: { pinRef: React.RefObject<HTMLDivElement> }) => {
+export const WeaponsArsenal = ({ pinRef }: { pinRef: React.RefObject<HTMLDivElement | null> }) => {
   return (
     <motion.div
       className="absolute top-[8%] right-[4%] z-20 w-64 max-w-[16rem] shadow-xl

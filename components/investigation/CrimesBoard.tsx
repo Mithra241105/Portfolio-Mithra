@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 interface CrimesBoardProps {
   setActiveView: (view: 'intro' | 'crimes' | 'credibility') => void;
-  clusterRef: React.RefObject<HTMLDivElement>;
-  c1PinRef: React.RefObject<HTMLDivElement>;
-  c2PinRef: React.RefObject<HTMLDivElement>;
-  c3PinRef: React.RefObject<HTMLDivElement>;
-  c4PinRef: React.RefObject<HTMLDivElement>;
+  clusterRef: React.RefObject<HTMLDivElement | null>;
+  c1PinRef: React.RefObject<HTMLDivElement | null>;
+  c2PinRef: React.RefObject<HTMLDivElement | null>;
+  c3PinRef: React.RefObject<HTMLDivElement | null>;
+  c4PinRef: React.RefObject<HTMLDivElement | null>;
 }
 
 // Each card has a unique absolute position, rotation, and pin position

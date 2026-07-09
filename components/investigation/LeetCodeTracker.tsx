@@ -12,7 +12,7 @@ interface LeetCodeData {
   totalQuestions: number;
 }
 
-export const LeetCodeTracker = ({ pinRef }: { pinRef: React.RefObject<HTMLDivElement> }) => {
+export const LeetCodeTracker = ({ pinRef }: { pinRef: React.RefObject<HTMLDivElement | null> }) => {
   const [data, setData] = useState<LeetCodeData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);

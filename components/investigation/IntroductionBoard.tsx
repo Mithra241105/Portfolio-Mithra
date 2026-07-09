@@ -8,13 +8,13 @@ import { GitHubTracker } from './GitHubTracker';
 
 interface IntroductionBoardProps {
   setActiveView: (view: 'intro' | 'crimes' | 'credibility') => void;
-  dossierPinRef: React.RefObject<HTMLDivElement>;
-  polaroidPinRef: React.RefObject<HTMLDivElement>;
-  leetcodePinRef: React.RefObject<HTMLDivElement>;
-  aliasPinRef: React.RefObject<HTMLDivElement>;
-  tipBoxPinRef: React.RefObject<HTMLDivElement>;
-  arsenalPinRef: React.RefObject<HTMLDivElement>;
-  githubPinRef: React.RefObject<HTMLDivElement>;
+  dossierPinRef: React.RefObject<HTMLDivElement | null>;
+  polaroidPinRef: React.RefObject<HTMLDivElement | null>;
+  leetcodePinRef: React.RefObject<HTMLDivElement | null>;
+  aliasPinRef: React.RefObject<HTMLDivElement | null>;
+  tipBoxPinRef: React.RefObject<HTMLDivElement | null>;
+  arsenalPinRef: React.RefObject<HTMLDivElement | null>;
+  githubPinRef: React.RefObject<HTMLDivElement | null>;
 }
 
 // Masking tape strip — more organic than a pin for sticky notes
@@ -26,7 +26,7 @@ const MaskingTape = ({ className = '' }: { className?: string }) => (
 );
 
 // Red push-pin for heavier cards
-const RedPin = ({ refProp, className = '' }: { refProp?: React.RefObject<HTMLDivElement>; className?: string }) => (
+const RedPin = ({ refProp, className = '' }: { refProp?: React.RefObject<HTMLDivElement | null>; className?: string }) => (
   <div
     ref={refProp}
     className={`absolute w-4 h-4 bg-red-600 rounded-full shadow-md z-40 ${className}`}

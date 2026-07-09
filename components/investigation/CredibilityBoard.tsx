@@ -5,13 +5,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 interface CredibilityBoardProps {
   setActiveView: (view: 'intro' | 'crimes' | 'credibility') => void;
-  clusterRef: React.RefObject<HTMLDivElement>;
-  e1PinRef: React.RefObject<HTMLDivElement>;
-  e2PinRef: React.RefObject<HTMLDivElement>;
-  e3PinRef: React.RefObject<HTMLDivElement>;
-  e4PinRef: React.RefObject<HTMLDivElement>;
-  gdgPinRef: React.RefObject<HTMLDivElement>;
-  symposiumPinRef: React.RefObject<HTMLDivElement>;
+  clusterRef: React.RefObject<HTMLDivElement | null>;
+  e1PinRef: React.RefObject<HTMLDivElement | null>;
+  e2PinRef: React.RefObject<HTMLDivElement | null>;
+  e3PinRef: React.RefObject<HTMLDivElement | null>;
+  e4PinRef: React.RefObject<HTMLDivElement | null>;
+  gdgPinRef: React.RefObject<HTMLDivElement | null>;
+  symposiumPinRef: React.RefObject<HTMLDivElement | null>;
 }
 
 const EXPERIENCE = [
