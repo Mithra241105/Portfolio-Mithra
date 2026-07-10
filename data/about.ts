@@ -2,6 +2,7 @@ import { DossierProfile } from '../types/data';
 
 export const profileData: DossierProfile = {
   name: "Mithra S",
+  alias: "Mithra24",
   role: "Frontend Developer & UI/UX Designer",
   status: "Active (B.E. Computer Science & Engineering, 2023-2027)",
   currentLocation: "Erode, Tamil Nadu, India",
